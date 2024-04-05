@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="logo.webp">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body class="*:p-0 *:m-0 font-poppins bg-black h-screen w-screen flex flex-col  ">
+    <div class="max-h-screen w-screen flex bg-black flex-col items-center ">
+        <div class="h-24   bg-black flex justify-center items-center ">
+            <h1 class="text-white font-extrabold text-3xl sm:text-3xl lg:text-4xl xl:text-5xl">Weather App</h1>
+
+        </div>
+        <div class="max-h-full w-11/12 sm:w-3/5 rounded-lg mt-10  md:w-1/2 lg:w-2/6" style="background-image: linear-gradient(to right, #DECBA4, #3E5151);;"> 
+            <div class="h-14 w-full flex justify-center  gap-4 items-center"> 
+                <input type="text" class="w-2/3 focus:outline-none rounded-3xl pl-4 font-bold text-gray-600" id="input">
+                <button class="rounded-full cursor-pointer  bg-white " id="enter"><i class="fa-solid fa-magnifying-glass p-2 " ></i></button>
+            </div>
+
+            <div class="w-full max-h-full flex flex-col items-center text-center" style="display: none;" id="display" >
+                
+                <img src="" class="h-20" id="logo" alt="">
+                <h1 class="text-5xl text-white font-bold pt-5" id="temp"></h1>
+                <h1 class="text-4xl pt-0 sfont-bold text-white pb-4 " id="city"></h1>
+                <div class="w-full h-8 mt-2  mb-2 flex justify-around" id="middle_div">
+                    <h1 class="font-semibold text-base text-white">
+                        Minimum
+                        <br>
+                        <span id="Minimum"></span>
+                    </h1>
+                    <h1 class="font-semibold text-base text-white">
+                        Feels Like
+                        <br>
+                        <span id="feels_like"></span>
+
+                    </h1>
+                    <h1 class="font-semibold text-base text-white">
+                        Maximum
+                        <br>
+                        <span id="Maximum"></span>
+                    </h1>
+                </div>
+
+                <div class="w-full h-24 flex justify-center items-center" id="bottom_div">
+                    <i class="fa-solid fa-cloud text-gray-700 pb-1 scale-150" ></i>
+                    <h3 class="text-white pr-7 pl-3" >
+                        <span id="humidity"></span>
+                        <br>
+                        Humidity
+                    </h3>
+                    <i class="fa-solid fa-wind pl-3 text-gray-600 scale-150"></i>
+                    <h3 class="text-white  pl-3">
+                        <span id="speed"></span>
+                        <br>
+                        Wind Speed
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
